@@ -10,9 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_10_14_213859) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "collages", force: :cascade do |t|
+    t.string "nombre"
+    t.string "medidas"
+    t.string "papel"
+    t.string "tecnica"
+    t.integer "precio"
+    t.boolean "disponibilidad"
+    t.string "imagen"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
