@@ -1,11 +1,7 @@
-<h1>Hola Carmen!</h1>
-
-<p>Este es mi primer collage:</p>
-
 <div class="collages">
   <% @collages.each do |collage| %>
-    <h2> <%= collage.nombre %> </h2>
-    <p> <%= collage.precio %> </p>
-    <img src=<%= collage.imagen %> alt="">
+    <%= link_to collages_path(collage) do %>
+      <img src=<%= collage.imagen %>>
+    <% end %>
   <% end %>
 </div>
