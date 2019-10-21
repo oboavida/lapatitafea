@@ -7,3 +7,15 @@ body {
 .collages img {
   max-width: 400px;
 }
+
+.collages {
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.collages-masonry {
+  display: grid;
+  grid-gap: 2em; /* [1] Add some gap between rows and columns */
+  grid-template-columns: repeat( auto-fill, minmax( 250px, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+  grid-auto-rows: 250px; /* [3] Set the height for implicitly-created row track */
+}

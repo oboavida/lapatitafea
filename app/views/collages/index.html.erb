@@ -1,7 +1,9 @@
 <div class="collages">
-  <% @collages.each do |collage| %>
-    <%= link_to collages_path(collage) do %>
-      <img src=<%= collage.imagen %>>
+  <div class="collages-masonry">
+    <% @collages.each do |collage| %>
+      <%= link_to collages_path(collage) do %>
+        <img src=<%= collage.imagen %>>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
