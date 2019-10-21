@@ -13,17 +13,6 @@ Collage.destroy_all
 puts "Done!... Creating new seeds..."
 
 Collage.create(
-  nombre: '¡Cómo no!',
-  medidas: "30 x 15 cm",
-  papel: "Fedrigoni extra fino",
-  tecnica: "Collage analógico",
-  precio: 50,
-  disponibilidad: true,
-  imagen: "https://i.imgur.com/T0mMYd4.jpg"
-  )
-
-
-Collage.create(
   nombre: '¡Cualquiera!',
   medidas: "15 x 30 cm",
   papel: "Fedrigoni extra gordo",
@@ -52,6 +41,16 @@ Collage.create(
   precio: 80,
   disponibilidad: true,
   imagen: "https://i.ibb.co/2yMVdD6/busco-piso.jpg"
+  )
+
+Collage.create(
+  nombre: '¡Cómo no!',
+  medidas: "30 x 15 cm",
+  papel: "Fedrigoni extra fino",
+  tecnica: "Collage analógico",
+  precio: 50,
+  disponibilidad: true,
+  imagen: "https://i.imgur.com/T0mMYd4.jpg"
   )
 
 Collage.create(
