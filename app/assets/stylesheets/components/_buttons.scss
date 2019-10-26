@@ -18,3 +18,20 @@
     text-align: center;
   }
 }
+
+.collage-navigation {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+}
+
+.navigation-arrow {
+  background-color: #E3E3E3;
+  margin-right: 17px;
+  padding: 5px 13px;
+  text-align: center;
+  &:hover {
+    background-color: gray;
+    color: white;
+  }
+}
