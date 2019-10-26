@@ -19,5 +19,22 @@
 
     <p> <%= @collage.precio %> €</p>
     </div>
+    <div class="collage-navigation d-flex">
+      <div class="previous">
+        <% if !@collage.previous.nil? %>
+          <%= link_to collages_path(@collage.previous.id) do %>
+            <p class="navigation-arrow"> <i class="fas fa-chevron-left"></i> </p>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="previous">
+        <% if !@collage.next.nil? %>
+          <%= link_to collages_path(@collage.next.id) do %>
+            <p class="navigation-arrow"> <i class="fas fa-chevron-right"></i> </p>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
   </div>
 </div>
