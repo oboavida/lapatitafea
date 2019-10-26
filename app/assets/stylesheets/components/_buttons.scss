@@ -1,3 +1,28 @@
+.add-collage {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #E3E3E3;
+  color: #A9A9A9;
+  position: fixed;
+  left: 30px;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+  p {
+    font-family: helvetica;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  &:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+
 .menu-button {
   width: 45px;
   height: 45px;
@@ -16,6 +41,10 @@
     font-size: 30px;
     font-weight: lighter;
     text-align: center;
+  }
+  &:hover {
+    background-color: gray;
+    color: white;
   }
 }
 
