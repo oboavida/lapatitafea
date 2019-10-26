@@ -1,6 +1,6 @@
 <div class="collages">
     <% @collages.each do |collage| %>
-      <%= link_to collages_path(collage) do %>
+      <%= link_to collage_path(collage) do %>
         <img src=<%= collage.imagen %>>
       <% end %>
     <% end %>
@@ -12,4 +12,13 @@
       <i class="fab fa-instagram" style="font-size: 22px;"></i>
     </div>
   </a>
+
+  <% if user_signed_in? %>
+    <%= link_to new_collage_path do %>
+      <div class="add-collage">
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+    <% end %>
+  <% end %>
+
 </div>

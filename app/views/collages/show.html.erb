@@ -11,6 +11,16 @@
         </div>
       <% end %>
     </div>
+
+    <% if user_signed_in? %>
+      <%= link_to new_collage_path do %>
+        <div class="add-collage">
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+      <% end %>
+    <% end %>
+
+
     <div class="collage-info">
     <h1 class="mb-4"> <%= @collage.nombre %> </h1>
     <p> <%= @collage.medidas %> </p>
@@ -22,14 +32,14 @@
     <div class="collage-navigation d-flex">
       <div class="previous">
         <% if !@collage.previous.nil? %>
-          <%= link_to collages_path(@collage.previous.id) do %>
+          <%= link_to collage_path(@collage.previous.id) do %>
             <p class="navigation-arrow"> <i class="fas fa-chevron-left"></i> </p>
           <% end %>
         <% end %>
       </div>
       <div class="previous">
         <% if !@collage.next.nil? %>
-          <%= link_to collages_path(@collage.next.id) do %>
+          <%= link_to collage_path(@collage.next.id) do %>
             <p class="navigation-arrow"> <i class="fas fa-chevron-right"></i> </p>
           <% end %>
         <% end %>

@@ -4,3 +4,15 @@
   right: 16px;
   z-index: 1000;
 }
+
+.alert-patita {
+  color: white;
+  background-color: $patita-green;
+  border-color: $patita-green;
+}
+
+.alert-wrong {
+  color: white;
+  background-color: red;
+  border-color: red;
+}
