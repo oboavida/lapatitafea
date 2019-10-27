@@ -13,7 +13,7 @@
     </div>
 
     <% if user_signed_in? %>
-      <%= link_to new_collage_path do %>
+      <%= link_to edit_admin_collage_path do %>
         <div class="add-collage">
           <i class="fas fa-pencil-alt"></i>
         </div>
@@ -29,9 +29,6 @@
 
     <p> <%= @collage.precio %> €</p>
     </div>
-
-    <%= cl_image_tag("wcvjylporozumjhq1wsm",
-      width: 200, height: 200, crop: :fill) %>
 
     <div class="collage-navigation d-flex">
 

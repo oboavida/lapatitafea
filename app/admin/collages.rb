@@ -5,7 +5,7 @@ ActiveAdmin.register Collage do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :nombre, :medidas, :papel, :tecnica, :precio, :disponibilidad, :imagen
+  permit_params :nombre, :medidas, :papel, :tecnica, :precio, :disponibilidad, :imagen, :gallery
   #
   # or
   #
@@ -14,5 +14,5 @@ ActiveAdmin.register Collage do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  
+
 end
