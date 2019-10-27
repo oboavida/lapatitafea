@@ -1,6 +1,6 @@
 class CollagesController < ApplicationController
   before_action :set_collage, only: %i[show edit update delete]
-  skip_before_action :authenticate_user!, only: %i[index show]
+  # skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
     @collages = Collage.all
