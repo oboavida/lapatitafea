@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_27_111239) do
+ActiveRecord::Schema.define(version: 2019_11_05_185426) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,7 +51,24 @@ ActiveRecord::Schema.define(version: 2019_10_27_111239) do
     t.string "imagen"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "gallery"
+    t.string "image1"
+    t.string "image2"
+    t.string "image3"
+    t.string "image4"
+    t.string "image5"
+    t.string "image_1"
+    t.string "image_2"
+    t.string "image_3"
+    t.string "image_4"
+    t.string "image_5"
+  end
+
+  create_table "photo_galleries", force: :cascade do |t|
+    t.bigint "collage_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.json "images"
+    t.index ["collage_id"], name: "index_photo_galleries_on_collage_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -66,4 +83,5 @@ ActiveRecord::Schema.define(version: 2019_10_27_111239) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "photo_galleries", "collages"
 end

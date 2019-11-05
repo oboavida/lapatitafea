@@ -5,7 +5,7 @@ ActiveAdmin.register Collage do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :nombre, :medidas, :papel, :tecnica, :precio, :disponibilidad, :imagen, :gallery
+  permit_params :nombre, :medidas, :papel, :tecnica, :precio, :disponibilidad, :imagen
   #
   # or
   #
